@@ -1,0 +1,93 @@
+<div class="bg-image">
+
+  <h1 class="firstHeading" style="color: #57d6d6;"> CRUD functionality performed on E-Education paroject </h1>
+  <!-- Add Degree -->
+<h2 class="heading" style="color: rgb(164, 204, 211);">Add Degree</h2>
+ 
+<div>
+  <div class="addDegree">
+    <label style="color: azure;">Name: </label>
+    <input [(ngModel)]="degree.name" placeholder="Enter the name of degree "  />
+    &#xA0; 
+    <label style="color: aliceblue;">StudentCnic: </label>
+    <input [(ngModel)]="degree.studentCnic" placeholder="Enter the Cnic of Student "  />
+    &#xA0; 
+    <label style="color: aliceblue;">Status: </label>
+    <input [(ngModel)]="degree.status" placeholder="Enter the status of degree "  />
+    &#xA0; &#xA0; 
+    <button style="background-color: rgb(12, 114, 114); color: azure;" (click)="addDegree()">Add Degree</button>
+  </div>
+  <!-- Search degree-->
+  <h2 class="heading" style="color: rgb(164, 204, 211);">Search Degree</h2>
+  <div class="searchDegree"> 
+    <label style="color: aliceblue;"> Enter Id: &#xA0;</label>
+    <input placeholder="Enter degree ID" type="number" value="" id="num" name="num" #num />
+    &#xA0; &#xA0; 
+    <button style="background-color: rgb(12, 114, 114); color: azure;" (click)="viewReport()">Find Degree</button>
+    &#xA0; &#xA0; 
+  </div>
+
+  <!-- View All Degrees -->
+  <h2 class="heading" style="color: rgb(164, 204, 211);">View All Degrees</h2>
+  <div class="searchDegree">
+  <label style="color: azure;"> Click the button to view all degrees </label> &#xA0; &#xA0; 
+  &#xA0; &#xA0; 
+  <button style="background-color: rgb(12, 114, 114); color: azure; margin-left: -15px;" (click)="refreshDegree()">All Degrees</button>
+   
+  </div>
+  <!-- Update Degree -->
+  <h2 class="heading" style="color: rgb(164, 204, 211);">Update Degree</h2>
+
+  <div class="searchDegree"> 
+    <label style="color: azure;"> Enter Id: </label> &#xA0; &#xA0;
+    <input placeholder="Enter degree ID" type="number" value="" id="numb" name="numb" #numb />
+    &#xA0; &#xA0;
+    <label style="color: azure;"> Enter New Name: </label> &#xA0; &#xA0;
+    <input placeholder="Enter the Name of Degree" type="string" id="degName" name="degName" #degName />
+    &#xA0; &#xA0; 
+    <button style="background-color: rgb(12, 114, 114); color: azure;" (click)="updateDegree()">Update Degree</button>
+
+  </div>
+  <!-- Delete Degree -->
+  <h2 class="heading" style="color: rgb(164, 204, 211);">Delete Degree</h2>
+  <div class="searchDegree"> 
+    <label style="color: azure;"> Enter Id to delete: </label> &#xA0; &#xA0;
+    <input placeholder="Enter degree ID" type="number" value="" id="x" name="x" #x />
+    &#xA0; &#xA0; 
+    <button style="background-color: rgb(12, 114, 114); color: azure;" (click)="deleteDegree()">Delete Degree</button>
+
+  </div>
+  
+
+  <div class="container">
+    <h1 class="result" style="color: #57d6d6;"> Getting Degree list from E-Education Project! </h1>
+    
+              <table class="table ">
+                <style>
+                  table, th, td {
+                    border: 2px solid #073d3b;
+                    border-collapse: collapse;
+                    width: auto;
+                  }
+                  </style>
+                <thead>
+                <tr class="font1">
+                  <th style="color:#00c7c7">Name</th>
+                  <th style="color:#00c7c7">CNIC</th>
+                  <th style="color:#00c7c7">Status</th>
+                </tr>
+                </thead>
+                <tbody>
+               <tr *ngFor="let temp of Degree;">
+                    <td class="tx" style="color:#b3cfcf">{{temp.name}}</td>
+                    <td class="tx" style="color:#b3cfcf">{{temp.studentCnic}}</td>
+                    <td class="tx" style="color:#b3cfcf">{{temp.status}}</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h1 class="msg"> {{noData}} </h1>
+            </div>
+
+
+       
+</div> 

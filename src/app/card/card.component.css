@@ -1,0 +1,60 @@
+body {
+    font-family: Overpass, Arial, sans-serif;
+    background-color: #d6d6f1;
+    
+    padding: 1em;
+    overflow: hidden;
+  }
+  article {
+   position: relative;
+   max-width: 100em;
+  }
+  main {
+    background: #e8e8e8;
+    max-width: 68em;
+    min-height: 75%;
+    padding: 1.875em 3.25em;
+    color:#333;
+    line-height: 1.5;
+  }
+  h2 {
+    background-color: #fff;
+    border: thin grey outset;
+    max-width:75%;
+    padding-left:1em;margin:0;
+    transform: rotate(-0.7deg);
+  }
+  
+  @media(min-width:700px) {
+    main {
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      background-image: url(https://res.cloudinary.com/jbowtie/image/upload/v1631662164/exclusive_paper_dyitgt.webp);
+      /* width: 70%; */
+      margin-right: 100px;
+      margin-left: 100px;
+      margin-bottom: 100px;
+    }
+    main:before, main:after {
+      content: "";
+      height: 98%;
+      position: absolute;
+      max-width: 75em;
+      width: 95%;
+      z-index: -1;
+    }
+    main:before {
+      background: #fafafa;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      left: -5px;
+      top: -4px;
+      transform: rotate(-2.5deg);
+    }
+    main:after {
+      background: #f6f6f6;
+      box-shadow: 0 0 3px rgba(0,0,0,0.2);
+      left: -6px;
+      top: 1px;
+      transform: rotate(1.4deg);
+    }
+  }
+  

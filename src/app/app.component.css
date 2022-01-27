@@ -1,0 +1,40 @@
+.topnav {
+    background-color: #008585;
+    color: #001414;
+    /* background-image: url("https://designshack.net/wp-content/uploads/background-design-trends-368x246.jpg"); */
+    overflow: hidden;
+    opacity: 0.5;
+    transition: top 0.3s;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #7a0000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #00a8a8;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  .background-img{
+  background-image: url("https://images.unsplash.com/photo-1518082593638-b6e73b35d39a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=868&q=80"); /* The image used */
+  height: 600px; /* You must set a specified height */
+  width: 1333px; /*Specifying the width*/
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  overflow: hidden;
+  display: none;
+
+
+  }
+  

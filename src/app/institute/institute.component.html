@@ -1,0 +1,32 @@
+
+<div class="bg-image">
+    <div class="container">
+      <h1 class="result" style="color: #57d6d6;"> Getting Institution list from E-Education Project! </h1>
+      
+                <table class="table ">
+                  <style>
+                    table, th, td {
+                      border: 2px solid #c6e7e6;
+                      border-collapse: collapse;
+                      width: auto;
+                    }
+                    </style>
+                  <thead>
+                  <tr class="font1">
+                    <th style="color:#00c7c7">ID</th>
+                    <th style="color:#00c7c7">Name</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr class="font" *ngFor="let allInstitutions of Institution">
+                   <td ><span style="color: #0d98ba" >{{allInstitutions.id}}</span></td>
+                    <td><span style="color: #ace5ee">{{allInstitutions.name}}</span></td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              
+         
+  </div>
+  

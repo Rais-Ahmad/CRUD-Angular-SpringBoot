@@ -1,0 +1,27 @@
+.bg-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url("https://www.pixelstalk.net/wp-content/uploads/2016/04/Teal-wallpaper-HD-high-quality-620x413.jpg"); /* The image used */
+    height: 700px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    overflow: hidden;
+}
+.table{
+   
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
+.font{
+    font-size: 36px;
+
+}
+.font1{
+    font-size: 40px;
+}
+.result{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 52px;
+}

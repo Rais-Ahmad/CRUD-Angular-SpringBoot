@@ -1,0 +1,49 @@
+<!-- 
+<a routerLink="/new" routerLinkActive="active">new :)</a> -->
+
+<div class="bg-image">
+  <div class="container">
+    <h1 class="result" style="color: #57d6d6;"> Result from JSON-SERVER dummy file </h1>
+    
+              <table class="table ">
+                <style>
+                  table, th, td {
+                    border: 2px solid #c6e7e6;
+                    border-collapse: collapse;
+                    width: auto;
+                  }
+                  </style>
+                <thead>
+                <tr class="font1">
+                  <th style="color:#00c7c7">ID</th>
+                  <th style="color:#00c7c7">Name</th>
+                  <th style="color:#00c7c7">Mathematics</th>
+                  <th style="color:#00c7c7">English</th>
+                  <th style="color:#00c7c7">Science</th>
+                  <th style="color:#00c7c7">Chemistry</th>
+                  <th style="color:#00c7c7">Physics</th>
+                  <th style="color:#00c7c7">PakStudies</th>
+                  <th style="color:#00c7c7">Urdu</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="font" *ngFor="let marks of Marks">
+                 <td ><span style="color: #0d98ba" >{{marks.id}}</span></td>
+                  <td><span style="color: #ace5ee">{{marks.name}}</span></td>
+                  <td><span style="color: #ace5ee">{{marks.Mathamatics}}</span></td>
+                  <td><span style="color: #ace5ee">{{marks.English}}</span></td>
+                  <td><span style="color: #ace5ee">{{marks.Science}}</span></td>
+                  <td><span style="color: #ace5ee">{{marks.Chemistry}}</span></td>
+                  <td><span style="color: #ace5ee">{{marks.Physics}}</span></td>
+                  <td><span style="color: #ace5ee">{{marks.PakStudies}}</span></td>
+                  <td><span style="color: #ace5ee">{{marks.Urdu}}</span></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+       
+</div>
+
+
+
+

@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<h1 style="color: rgb(255, 155, 23);" >Todo List</h1> 
+<div>
+  <!-- <p><span class="emoji"> 💩 </span></p> -->
+  <input class="input" placeholder="Please Enter item " type="text" #newTodo/>
+  &#xA0; 
+  &#xA0; 
+  <button class="addBtn" [style.color]="'white'" (click)="add(newTodo.value);newTodo.value='';" > &#43; </button>   
+</div>
+<hr/>
+<table>
+  <tr *ngFor="let todo of todos">
+    <td>{{todo.id}}#</td>
+    <td>{{todo.label}}</td>
+    <td class="td">{{todo.done ? '✔': '❌'}}</td>
+    <td><button class="btn" (click)="delete(todo)"><i class="fa fa-trash"></i></button></td>
+    <td><button class="btn1" (click)="toggle(todo)"><i class="fa fa-toggle-on"></i></button></td>
+    </tr>
+
+    <!-- <tr>
+    <td> <h1 [style.color]="color"> Orange </h1> </td>
+    <td > <span  class="emoji"> 🍊 </span> </td>
+    </tr> -->
+    <tr>
+    <td> <h3 [style.color]="err? 'Red': 'DarkBlue' "> Change Color  &#xA0;  &#xA0; </h3></td>
+    <td> <button class="changeBtn" (click)="updateColor()"> change </button> </td>
+    </tr>
+
+
+
+</table>
+<!-- <a routerLink="/user" routerLinkActive="active">User :)</a> -->
