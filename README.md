@@ -1,2 +1,3 @@
 # CRUD-Angular-SpringBoot
-The code is in branch "angular"
+The Frontend code is in branch "angular"
+The Backend code is in branch "backend"
